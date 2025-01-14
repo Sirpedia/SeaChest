@@ -6,13 +6,20 @@ https://www.walmart.com/search?q=(search result here)
     <input id="productinput" style="height:100px; width: 500px; border-radius: 20px; font-size: xx-large; background-color: #1E1E1E; color: white; border-width: 5px; border-color: white;">
 <img src="blackwave.gif" style="position:absolute;top:25px;left:650px;border-radius: 15px;" width="1250" height="940">
 <h2 style="color:rgb(168, 168, 168)">Find the usual prices of the product.</h2>
-<button onclick="findprices()">Find</button>
+
+    <button onclick="findprices()">Find</button>
     <h3 id="results"></h3>
+    <a href=" " id="link">
+        <button> Go to</button>
+    </a>
 <script>
 function findprices() {
 let product = document.getElementById("productinput").value
-let results = document.getElementsById("results")
+let results = document.getElementById("results")
+document.getElementById("link").href = "https://www.walmart.com/search?q=" + product
 
+
+    
 }
 
 
